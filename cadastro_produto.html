@@ -1,42 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de produto</title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Document</title>
 </head>
 <body>
-    <!--  enctype='multipart/form-data' -> seve para abilitar o formulário submeter arquivos e dados-->
-    <h1>Cadastro de Produtos  - DOIN</h1>
-    <div id="teste">
-        <form method="post" action="cadastro_usuario.php" enctype='multipart/form-data'>
-            <fieldset>
-                <legend>Cadastro</legend>
-                <div class="form-item">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite o nome">
-                </div>
-                <div class="form-item">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite o email">
-                </div>
-                <div class="form-item">
-                    <label for="telefone">Telefone:</label>
-                    <input type="text" id="telefone" name="telefone" placeholder="Digite o Telefone">
-                </div>
-                <div class="form-item">
-                    <!-- comando accept aceita o dado que chamar-->
-                    <!-- batão para colocar arquivo, no caso seria foto -->
-                    <input type="file" id="foto" name="foto" accept="image/*" />
-                </div>                
-                <div class="form-item">
-                    <input id="btn" type="submit" value="Enviar" >
-                    <a href='index.php'> Voltar</a>
-                </div>
-            </fieldset>
-        </form>
-    </div>
+    <form action="cadastro_produto.php" method="post">
+      <div>
+      <h1>Cadastro de produtos - DOIN</h1>
+      <fieldset>
+      <label for="nome">Nome: </label>
+      <input type="text" size="50" name="nome_produto" id="nome_produto">
+      <br>
+      <br>
+      <label for="id_produto">ID do produto: </label>
+      <input type="text" size="50" name="id_produto" id="id_produto">
+      <br>
+      <br>
+      <label for="dt_validade">Data de validade: </label>
+      <input type="date" name="dt_validade" id="dt_validade">
+      <br>
+      <br>
+      <label for="cidade">Cidade: </label>
+      <input type="text" size="50" name="cidade" id="cidade">
+      <br>
+      <br>
+      <h3>Estado: </h3>
+      <select id="UF" name="UF">
+        <option value="">Selecione</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espirito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+    </select>
+      <br>
+      <br>
+      <label for="descricao_produto">Descrição: </label>
+      <input type="text" size="50" name="descricao_produto" id="descricao_produto">
+      <br>
+      <br>
+      <label for="quant_produto">Quantidade: </label>
+      <input type="number" size="50" name="quant_produto" id="quant_produto" min="1" max="1000">
+      <br>
+      <h3>Modo de operação: </h3>
+      <div>
+        <input type="radio"  name="modoOperacao" value="troca">
+        <label for="huey">Troca</label>
+        <input type="radio"  name="modoOperacao" value="doacao">
+        <label for="huey">Doação</label>
+      </div>
+      <br>
+      <div id="botao">
+      <button type="submit">Enviar</button>
+      </div>
+      </div>
+    </fieldset>
+    </form>
 </body>
 </html>

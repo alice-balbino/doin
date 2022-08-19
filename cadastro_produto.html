@@ -4,31 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="cadastro_produto.css">
   <title>Document</title>
 </head>
 <body>
+  <div>
+    <header class="top-header">
+      <div class="nav-top">
+          <h1 id="titulo">Cadastro de produtos - DoIn</h1>
+      </div>
+    </header>
+  </div>
     <form action="cadastro_produto.php" method="post">
-      <div>
-      <h1>Cadastro de produtos - DOIN</h1>
-      <fieldset>
-      <label for="nome">Nome: </label>
-      <input type="text" size="50" name="nome_produto" id="nome_produto">
+      <div class="container" >
+        <div class="box">
+      <fieldset class="cor-box">
+        <h2 id="titulo">Cadastre aqui!</h2>
+      <label for="nome">Nome: </label></br>
+      <input type="text" size="50" name="nome_produto" placeholder="Digite o nome" id="nome_produto">
       <br>
       <br>
-      <label for="id_produto">ID do produto: </label>
-      <input type="text" size="50" name="id_produto" id="id_produto">
+      <label for="id_produto">ID do produto: </label></br>
+      <input type="text" size="50" name="id_produto"  placeholder="Digite o código do produto" id="id_produto">
       <br>
       <br>
-      <label for="dt_validade">Data de validade: </label>
-      <input type="date" name="dt_validade" id="dt_validade">
+      <label for="descricao_produto">Descrição: </label></br>
+      <input type="text" size="50" name="descricao_produto"  placeholder="Descreva o produto" id="descricao_produto">
       <br>
       <br>
-      <label for="cidade">Cidade: </label>
-      <input type="text" size="50" name="cidade" id="cidade">
+      <label for="cidade">Cidade: </label></br>
+      <input type="text" size="50" name="cidade"  placeholder="Digite a cidade" id="cidade">
       <br>
       <br>
-      <h3>Estado: </h3>
+      <label for="estado">Estado: </label></br>
       <select id="UF" name="UF">
         <option value="">Selecione</option>
         <option value="AC">Acre</option>
@@ -61,11 +69,12 @@
     </select>
       <br>
       <br>
-      <label for="descricao_produto">Descrição: </label>
-      <input type="text" size="50" name="descricao_produto" id="descricao_produto">
+     
+      <label for="dt_validade">Data de validade: </label></br>
+      <input type="date" name="dt_validade" id="dt_validade">
       <br>
       <br>
-      <label for="quant_produto">Quantidade: </label>
+      <label for="quant_produto">Quantidade: </label></br>
       <input type="number" size="50" name="quant_produto" id="quant_produto" min="1" max="1000">
       <br>
       <h3>Modo de operação: </h3>
@@ -76,9 +85,10 @@
         <label for="huey">Doação</label>
       </div>
       <br>
-      <div id="botao">
-      <button type="submit">Enviar</button>
+      <div id="divright">
+      <button type="submit" style="background-color: #afc7b9; border-color: #8dccad" >Cadastrar</button>
       </div>
+    </div>
       </div>
     </fieldset>
     </form>

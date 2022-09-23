@@ -13,6 +13,7 @@
     <div id="centro">
         <ul>
             <li><a href="cadastro_produto.html">Cadastre seu produto aqui!</li>
+            <li><a href="cadastro_usuario/cadastro_usuario.html">Cadastre-se aqui!</li>
         </ul>
     </div>
 </body>

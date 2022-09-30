@@ -31,11 +31,6 @@
                         <label for="firstname">Nome</label>
                         <input id="firstname" type="text" name="firstname" placeholder="Digite o nome" required>
                     </div>
-
-                    <div class="input-box">
-                        <label for="lastname">ID do produto</label>
-                        <input id="id_produto" type="text" name="id_produto" placeholder="Digite o código do produto" required>
-                    </div>
                     <div class="input-box">
                         <label for="email">Descrição</label>
                         <input id="descricao_produto" type="text" name="descricao_produto" placeholder="Descreva o produto" required>
@@ -74,13 +69,14 @@
                         <option value="TO">Tocantins</option>
                     </select>
                     </div>
-
+                    <div class="input-box">
+                        <label for="cidade">Cidade</label>
+                        <input id="cidade" type="text" name="cidade" placeholder="Digite a cidade" required>
+                    </div>
                     <div class="input-box">
                         <label for="password">Data de validade</label>
-                        <input type="date" name="password" >
+                        <input type="date" name="dataVal" >
                     </div>
-
-
                     <div class="input-box">
                         <label for="confirmPassword">Quantidade</label>
                         <input id="confirmPassword" type="number" name="confirmPassword" >
@@ -94,20 +90,17 @@
                     </div>
 
                     <div class="gender-group">
-                        <div class="gender-input">
-                            <input id="female" type="radio" name="gender">
-                            <label for="female">Troca</label>
-                        </div>
+                        <div>
+                            <div class="gender-input">
+                                <input id="female" type="radio" name="gender">
+                                <label for="female">Troca</label>
+                            </div>
 
-                        <div class="gender-input">
-                            <input id="male" type="radio" name="gender">
-                            <label for="male">Doação</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
-                            <label for="others">Troca e Doação</label>
-                        </div>
+                            <div class="gender-input">
+                                <input id="male" type="radio" name="gender">
+                                <label for="male">Doação</label>
+                            </div>
+                        </div>  
                     </div>
                 </div>
 

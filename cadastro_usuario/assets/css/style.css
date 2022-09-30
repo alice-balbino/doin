@@ -98,6 +98,20 @@ body {
     margin-bottom: 1.1rem;
 }
 
+.entrar{
+    display: flex;
+    flex-direction: row;
+}
+
+.entrar .input-box input{
+    margin-inline: 10px;
+    margin-left: 2px;
+
+}
+.entrar .input-box label{
+    margin-left: 12px;
+}
+
 .input-box input {
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
